@@ -1,0 +1,27 @@
+{
+  "mssv": "02457",
+  "town": "A",
+  "seeds": {
+    "mc": 2874756388,
+    "search": 3171850134,
+    "test": 1999214824
+  },
+  "quick": false,
+  "todo_tests": {
+    "passed": 31,
+    "source": "python -m pytest -q tests/test_todos.py"
+  },
+  "parity_tests": {
+    "passed": 10,
+    "source": "evidence/parity.log"
+  },
+  "checks": {
+    "full_budget": true,
+    "protected_sources_unchanged": true,
+    "hazard_feasible": true,
+    "report_images_present": true,
+    "training_progress_constraint": true,
+    "fix_scene_avoids_failure": true
+  },
+  "exposure_interpretation": "0.068 per trip = 1.4 cyclist encounters/km (Kegalle 2025) x 0.2142 km/trip x 94/414 lane merges (Al-Taie CHI 2023); order-of-magnitude estimate"
+}

@@ -1,0 +1,62 @@
+{
+  "format": "avsim-studio/1",
+  "params": {
+    "cutT0": 5.5,
+    "cutDur": 2.4,
+    "cutV": 15.3,
+    "pedT0": 5.2,
+    "pedV": 1.35,
+    "busGo": 14.7,
+    "cutDs": -1.5,
+    "tgT": 0.8,
+    "mu": 0.8,
+    "cutGap": 29.5,
+    "cutBrake": 0,
+    "pedGap": 7.2,
+    "pedLook": 1,
+    "civil": true
+  },
+  "policy": {},
+  "hazards": [
+    {
+      "x": 61,
+      "lane": "E2",
+      "d": 0.4,
+      "v": 4.2,
+      "swerve": 2.65,
+      "swDur": 2.85,
+      "t0": 0,
+      "trig": 18,
+      "type": "bike"
+    }
+  ],
+  "ego": "planner",
+  "space": {
+    "h0_x": [
+      -20,
+      70
+    ],
+    "h0_d": [
+      -0.6,
+      0.6
+    ],
+    "h0_v": [
+      3.0555555555555554,
+      6.111111111111111
+    ],
+    "h0_swerve": [
+      2.4,
+      4.4
+    ],
+    "h0_swDur": [
+      2.8,
+      3.0
+    ],
+    "h0_trig": [
+      8,
+      40
+    ]
+  },
+  "exposure": 0.068,
+  "why": "exposure = (so lan gap xe dap/km) x (km moi chuyen) x P(xe dap lan ngang vao lan xe | gap) = 1.4 x 0.2142 x 94/414 = 0.068. (1) 1.4 lan gap xe dap/km tren doan duong chung (roadway), do bang video tu tren xe e-scooter, 23 nguoi lai, Melbourne: Kegalle et al. 2025, 'Watch Out! E-scooter Coming Through', Proc. ACM IMWUT 9(1) Art.217, Table 4 (https://arxiv.org/abs/2502.16755). (2) 0.2142 km = quang duong trung binh cua ego trong mot chuyen mo phong 24 s (evidence/fix.json: baseline_test.progress = 214.2 m). (3) 94/414: so lan quan sat 'lane merging' (xe dap chuyen ngang vao lan xe) tren 414 lan gap xe dap-o to quan sat ngoai thuc dia o Glasgow: Al-Taie et al. CHI 2023 'Keep it Real', Table 1 (https://eprints.gla.ac.uk/294065/). Huong sai lech: cac diem quan sat Glasgow duoc chon co chu dich theo kich ban nguy hiem nen 94/414 co the cao hon mot doan pho ngau nhien (exposure bi danh gia cao); nguoc lai Melbourne co ha tang xe dap tot, pho Viet Nam co mat do xe dap/xe may lon hon nhieu (bi danh gia thap). Khong phai moi lan nhap lan deu lach 2.4-4.4 m. Toc do [11/3.6,22/3.6] m/s dua tren phan vi 15 va 85 cua 367 xe dap trong FHWA-HRT-04-103, chuong 6, bang 12 (https://www.fhwa.dot.gov/publications/research/safety/04103/06.cfm). Cac khoang con lai la mien kiem thu thiet ke tu hinh hoc/luc hoc mo phong: lan rong 3.5 m, d trong [-0.6,0.6] m va swerve [2.4,4.4] m bao phu viec tu lan E2 lan vao E1 khi tranh vat can; swDur [2.8,3.0] s cho a_lat_max=pi^2*4.4/(2*2.8^2)=2.77 m/s2, nho hon gioi han 3 m/s2 trong studio. x [-20,70] m nam tren duong E2, phia truoc ego x=-40 m va trong vung co the gap trong 24 s; trig [8,40] m bao phu khoang phanh cua ego 12.5 m/s: v^2/(2*mu*g)=9.95 m (kho) hoac 15.93 m (uot), cung cac khoang xa hon. Cac truong duoc rut deu va doc lap la gia dinh benchmark. Khong sao chep mien space vi du README."
+}

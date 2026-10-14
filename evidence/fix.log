@@ -1,0 +1,52 @@
+  -> evidence/meta.json
+[fix]
+  [ 1] {'cautionV': 5.0}  TRAIN fail 7.85e-05 (hi 2.08e-04)  progress 171.2 m
+  [ 2] {'cautionV': 6.5}  TRAIN fail 3.21e-04 (hi 7.79e-04)  progress 196.1 m
+  [ 3] {'cautionV': 6.0}  TRAIN fail 5.24e-04 (hi 9.29e-04)  progress 185.9 m
+  [ 4] {'cautionV': 9.0}  TRAIN fail 1.05e-03 (hi 1.97e-03)  progress 228.3 m
+  [ 5] {'cautionV': 8.5}  TRAIN fail 9.87e-04 (hi 1.90e-03)  progress 225.6 m
+  [ 6] {'cutinLat': 2.6}  TRAIN fail 1.64e-05 (hi 4.77e-05)  progress 216.9 m
+  [ 7] {'cutinLat': 3.0}  TRAIN fail 5.47e-07 (hi 9.25e-07)  progress 216.9 m  unseen: bus_bypass
+  [ 8] {'cutinLat': 3.3}  TRAIN fail 5.47e-07 (hi 9.25e-07)  progress 216.9 m  unseen: bus_bypass
+  [ 9] {'T': 2.0}  TRAIN fail 1.22e-02 (hi 3.55e-02)  progress 203.8 m
+  [10] {'cutinLat': 3.0, 'cautionV': 6.5}  TRAIN fail 7.38e-07 (hi 1.22e-06)  progress 196.1 m  unseen: bus_bypass
+  [11] {'cutinLat': 3.0, 'cautionV': 7.0}  TRAIN fail 6.21e-07 (hi 1.01e-06)  progress 206.2 m  unseen: bus_bypass
+  [12] {'cutinLat': 2.6, 'cautionV': 7.0, 'pedBuffer': 3.5}  TRAIN fail 6.21e-07 (hi 1.01e-06)  progress 206.2 m  unseen: bus_bypass
+  re-hunting under the chosen policy and the baseline for the TEST estimate ...
+    bus_bypass  round 1: elite level   -4.92  crashes   0  infeasible 1
+    bus_bypass  round 2: elite level   -2.33  crashes   0  infeasible 1
+    bus_bypass  round 3: elite level   -2.24  crashes   0  infeasible 2
+    bus_bypass  round 4: elite level   -2.19  crashes   0  infeasible 0
+    bus_bypass  round 5: elite level   -1.96  crashes   0  infeasible 0
+    bus_bypass  round 6: elite level   -0.57  crashes   0  infeasible 0
+    bus_bypass  round 7: elite level   -0.00  crashes   0  infeasible 0
+    bus_bypass  round 8: elite level   -0.00  crashes   0  infeasible 0
+    crosswalk_block round 1: elite level   -5.12  crashes   0  infeasible 0
+    crosswalk_block round 2: elite level   -4.99  crashes   0  infeasible 3
+    crosswalk_block round 3: elite level   -4.99  crashes   0  infeasible 3
+    crosswalk_block round 4: elite level   -4.99  crashes   0  infeasible 0
+    crosswalk_block round 5: elite level   -4.99  crashes   0  infeasible 0
+    crosswalk_block round 6: elite level   -4.87  crashes   0  infeasible 0
+    crosswalk_block round 7: elite level   -4.53  crashes   0  infeasible 0
+    crosswalk_block round 8: elite level   -3.42  crashes   0  infeasible 0
+    bus_bypass  round 1: elite level   -3.18  crashes   0  infeasible 1
+    bus_bypass  round 2: elite level   -2.25  crashes   1  infeasible 0
+    bus_bypass  round 3: elite level   -1.53  crashes   1  infeasible 0
+    bus_bypass  round 4: elite level   -0.00  crashes  14  infeasible 0
+    bus_bypass  round 5: elite level    0.00  crashes  34  infeasible 0
+    bus_bypass  round 6: elite level    0.00  crashes  37  infeasible 0
+    bus_bypass  round 7: elite level    0.00  crashes  52  infeasible 0
+    bus_bypass  round 8: elite level    0.00  crashes  47  infeasible 0
+    crosswalk_block round 1: elite level   -5.12  crashes   0  infeasible 0
+    crosswalk_block round 2: elite level   -4.99  crashes   0  infeasible 3
+    crosswalk_block round 3: elite level   -4.99  crashes   0  infeasible 3
+    crosswalk_block round 4: elite level   -4.99  crashes   1  infeasible 0
+    crosswalk_block round 5: elite level   -4.99  crashes   0  infeasible 0
+    crosswalk_block round 6: elite level   -4.86  crashes   1  infeasible 1
+    crosswalk_block round 7: elite level   -3.50  crashes   2  infeasible 0
+    crosswalk_block round 8: elite level   -2.58  crashes   2  infeasible 0
+  chosen {'cutinLat': 3.0} (picked on TRAIN: fail 5.47e-07). Report these, from TEST:
+    chosen   TEST fail 2.43e-05  fail_hi_seen 7.10e-05  fail_hi (valid) 3.88e-02  unseen ['bus_bypass']  progress 214.0 m
+    baseline TEST fail 3.18e-04  fail_hi_seen 5.31e-04  fail_hi (valid) 1.81e-03  unseen []  progress 214.2 m
+  -> evidence/fix.json
+  (1055 s)

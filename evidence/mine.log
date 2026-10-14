@@ -1,0 +1,10 @@
+  -> evidence/meta.json
+[mine]
+  the scene from the viewer: planner [('ego', 'H0', 13.55)]
+  1495 feasible of 1500 draws (100% accepted) over 6 hazard ranges, your town's traffic
+  baseline: 247 ego collisions = 244 avoidable by a full brake + 1 unavoidable + 2 unattributed (3 at < 1 m/s);  P(planner failure | hazard) = 1.63e-01 [1.45e-01, 1.83e-01]
+            x exposure 1 per trip = 1.63e-01 per trip (upper 1.83e-01)
+  chosen  : 123 ego collisions = 123 avoidable by a full brake + 0 unavoidable + 0 unattributed (31 at < 1 m/s);  P(planner failure | hazard) = 8.23e-02 [6.94e-02, 9.73e-02]
+            x exposure 1 per trip = 8.23e-02 per trip (upper 9.73e-02)
+  -> evidence/mine.json
+  (173 s)
